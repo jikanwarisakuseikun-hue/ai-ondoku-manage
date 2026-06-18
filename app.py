@@ -35,11 +35,11 @@ azure_region = st.secrets["AZURE_REGION"]
 # --- 2. 生徒の個人情報入力 ---
 col1, col2, col3 = st.columns(3)
 with col1:
-    class_name = st.text_input("クラス：", placeholder="例: 1組")
+    class_name = st.text_input("クラス：", placeholder="例: 1A")
 with col2:
-    student_num = st.text_input("出席番号：", placeholder="例: 05")
+    student_num = st.text_input("出席番号：", placeholder="例: 5")
 with col3:
-    student_name = st.text_input("氏名：", placeholder="例: 田中太郎")
+    student_name = st.text_input("イニシャル：", placeholder="例: TS")
 
 # --- 🌟 先生が設定したお題の表示エリア ---
 st.markdown("---")
