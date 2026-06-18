@@ -1,0 +1,4 @@
+azure-cognitiveservices-speech
+gspread
+google-api-python-client
+pandas
