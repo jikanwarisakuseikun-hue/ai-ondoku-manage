@@ -1,4 +1,5 @@
 azure-cognitiveservices-speech
-gspread
+google-auth
 google-api-python-client
 pandas
+streamlit
