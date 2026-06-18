@@ -44,7 +44,15 @@ with col3:
 # --- 🌟 先生が設定したお題の表示エリア ---
 st.markdown("---")
 st.markdown(f"### 📖 今日の課題: **{st.session_state.teacher_unit}**")
-st.info(f"👇 この英文を大きな声で読んでね👇\n\n### **{st.session_state.teacher_text}**")
+
+st.info("👇 この英文を大きな声で読んでね👇")
+
+# 🌟 背景を白（#ffffff）、文字を黒（#000000）にして、綺麗な枠線で囲みました
+st.markdown(
+    f"<div style='font-size: 18px; font-weight: bold; line-height: 1.8; color: #000000; background-color: #ffffff; padding: 20px; border: 1px solid #dddddd; border-radius: 8px; white-space: pre-wrap;'>{st.session_state.teacher_text}</div>", 
+    unsafe_allow_html=True
+)
+
 st.markdown("---")
 
 # 内部処理用にお題を代入
